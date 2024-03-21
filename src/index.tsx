@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import SampleButton from './Component/SampleButton';
 import CounterButton from './Component/CounterButton';
+import Card from './Component/Card';
 
 const root = ReactDOM.createRoot(
 	document.getElementById('root') as HTMLElement
@@ -13,6 +14,13 @@ root.render(
 	<React.StrictMode>
 		<SampleButton />
 		<CounterButton />
+		<Card title="テストカード">
+			<p>{"これはカードコンポーネントのテストです"}</p>
+			<p>{"コンポーネントにPropsがあるときに、"}</p>
+			<p>{"ちゃんと実行できるかテストしましょう。"}</p>
+			<p>{"テストをするのは大事です。"}</p>
+			<p>{"よーく考えよう♪"}</p>
+		</Card>
 	</React.StrictMode>
 );
 
